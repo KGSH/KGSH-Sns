@@ -2,5 +2,15 @@
         margin-top: -12px;
         padding: 0 !important;
         float: left;
+        width: 200px !important;
         word-wrap: break-word;
+        margin-left: 0 !important;
+        position: relative;
+        display: block;
+        text-align: center;
+
+        .user-profile-image {
+            width: 100px;
+            height: 100px;
+        }
     }

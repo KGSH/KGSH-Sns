@@ -6,8 +6,17 @@
 
 body {
     background: $oc-gray-2;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
 }
 
 html {
   box-sizing: border-box;
+}
+
+a {
+    color: #365899;
+    cursor: pointer;
+    text-decoration: none;
 }
