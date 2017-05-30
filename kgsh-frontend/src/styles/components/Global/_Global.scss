@@ -1,0 +1,45 @@
+.global-container {
+    width: 1000px !important;
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+    left: 0;
+    top: 2.5rem;
+
+    .content {
+        margin: 0;
+        outline: none;
+        padding: 0;
+        width: auto;
+    }
+
+    ._2ht {
+        padding-top: 12px;
+    }
+}
+
+.main-container {
+    display: block;
+    width: 100%;
+
+    .content-container {
+        float: left;
+        margin-top: -12px;
+        margin-left: 40px !important;
+        position: relative;
+        width: 820px !important;
+        padding: 0 !important;
+    }
+
+    .content-area {
+        margin-right: 0;
+        padding: 0 !important;
+        float: left;
+        outline: none;
+        word-wrap: break-word;
+        right: 320px;
+        width: 500px !important;
+        margin-left: 12px !important;
+        position: relative;
+    }
+}
