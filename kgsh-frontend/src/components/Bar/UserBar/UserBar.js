@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import defaultThumbnail from './assets/default-thumbnail.png';
+import defaultThumbnail from './../../../assets/default-thumbnail.png';
 
 class UserBar extends Component {
     render(){

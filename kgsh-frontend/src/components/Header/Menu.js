@@ -5,17 +5,17 @@ class Menu extends Component {
         super(props);
         this.state = {
             menuData : [
-                {menuName : "Login"},
-                {menuName : "Sign up"}
+                {menuName : "로그인", className : "signin"},
+                {menuName : "회원가입", className : "singup"}
             ]
         }
     }
     render(){
         return (
             <ul className="nav">
-                {this.state.menuData.map((menu, i)=>{
+                {this.state.menuData.map((menu)=>{
                     return (
-                        <MenuItem name={menu.menuName}/>
+                        <MenuItem className={menu.className} name={menu.menuName}/>
                     );
                 })}
             </ul>
@@ -26,7 +26,7 @@ class Menu extends Component {
 class MenuItem extends Component {
     render(){
         return (
-            <li><a>{this.props.name}</a></li>
+            <li><a className={this.props.className}>{this.props.name}</a></li>
         );
     }
 }

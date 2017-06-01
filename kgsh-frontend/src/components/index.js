@@ -1,9 +1,11 @@
-import Header from './Base/Header/Header';
-import UserBar from './Base/Bar/UserBar/UserBar';
-import FriendsBar from './Base/Bar/FriendsBar/FriendsBar';
+import Header from './Header/Header';
+import UserBar from './Bar/UserBar/UserBar';
+import FriendsBar from './Bar/FriendsBar/FriendsBar';
+import Composer from './Composer/Composer';
 
 export {
     Header,
     UserBar,
-    FriendsBar
+    FriendsBar,
+    Composer
 }
