@@ -1,0 +1,110 @@
+.feed {
+    position: relative;
+    margin-bottom: 10px;
+    
+    .feed-container {
+        border-color: transparent;
+        border-left-width: 0;
+        border-right-width: 0;
+        background-color: #fff;
+        border: 1px solid;
+        border-color: #e5e6e9 #def0e4 #d0d1d5;
+        border-radius: 4px;
+        bottom: -1px;
+        left: -1px;
+        pointer-events: none;
+        right: -1px;
+        top: -1px;
+
+        .uv12 {
+            margin-top: -12px;
+        }
+
+        .h40 {
+            height: 40;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .feed-contents {
+            padding: 12px 12px 0;
+
+            .feed-writer {
+                margin-bottom: 11px;
+                zoom: 1;
+
+                .feed-writer-info {
+                    float: left;
+                    border: 1px solid rgba(0,0,0, .1);
+                    bottom: 0;
+                    left: 0;
+                    position: relative;
+                    margin-right: 8px;
+                    display: block;
+                    right: 0;
+                    top: 0;
+                    
+                    img {
+                        display: block;
+                        height: 40px;
+                        width: 40px;
+                        border: 0;
+                    }
+                }
+
+
+                .feed-writer-name {
+                    display: inline-block;
+                    vertical-align: middle;
+                    overflow: hidden;
+
+                    .name {
+                        margin-bottom: 2px;
+                        padding-right: 22px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        line-height: 1.38;
+                        color: #1d2129;
+                        margin: 0;
+                        padding: 0;
+                        display: block;
+
+                        span {
+                            a {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    .time {
+                        color: #90949c;
+                        position: relative;
+
+                        span {
+                            color: #90949c;
+                            font-weight: normal;
+                            font-size: 12px;
+
+                            a {
+                                cursor: pointer;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .feed-post {
+                font-size: 20px;
+                font-weight: 250;
+                line-height: 28px;
+                letter-spacing: 0;
+                margin: 7px 0 7px 0;
+
+                p {
+                    margin: 6px 0;
+                }
+            }
+        }
+    }
+}

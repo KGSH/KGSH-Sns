@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {App} from './containers';
-import style from './styles/main.scss';
+import { App, Authentication, Home } from './containers';
+import { Router, Route } from 'react-router';
+import createBrowserHistory from 'history/createBrowserHistory'
+import './styles/main.scss';
 
-const root = document.getElementById('root');
+const rootElement = document.getElementById('root');
 
-ReactDOM.render(<App />, root);
+ReactDOM.render((
+    <Router history={createBrowserHistory()}>
+        <Route>
+            <div>
+                <Route exact path="/" component={Home}/>
+                <Route path="/auth" component={Authentication}/>
+            </div>
+        </Route>
+    </Router>), rootElement);

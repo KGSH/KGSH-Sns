@@ -1,13 +1,7 @@
-div {
-    display: block;
-}
-
 .global-container {
-    width: 1200px !important;
+    width: 100%;
     margin: 0 auto;
-    position: fixed;
-    zoom: 1;
-    left: 0;
+    position: relative;
     top: 2.5rem;
 
     .content {
@@ -74,16 +68,11 @@ div {
         border-top: 1px solid #e9ebee;
         margin: -12px 0 12px 0;
     }
-
-    ._5xmp {
-        margin-right: 6px;
-        display: inline-block;
-    }
 }
 
 .main-container {
     display: block;
     width: 100%;
     margin-top: 20px;
-    position: fixed;
+    position: relative;
 }

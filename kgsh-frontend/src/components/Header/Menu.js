@@ -13,9 +13,9 @@ class Menu extends Component {
     render(){
         return (
             <ul className="nav">
-                {this.state.menuData.map((menu)=>{
+                {this.state.menuData.map((menu,i)=>{
                     return (
-                        <MenuItem className={menu.className} name={menu.menuName}/>
+                        <MenuItem className={menu.className} name={menu.menuName} key={i}/>
                     );
                 })}
             </ul>
