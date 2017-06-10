@@ -20,9 +20,9 @@
                     <div class="panel-heading">
                         {{ post.title }}
                     </div>
-                    <div class="panel-body">    
+                    <div class="panel-body text-center">    
                         {% if post.photo %}
-                            <img src="{{ post.photo.url }}">
+                            <img src="{{ post.photo.url }}" class="post_photo">
                         {% endif %}
                         <hr/>
 
@@ -32,6 +32,16 @@
                         <a href="{% url "blog:index" %}" class="btn btn-default">
                             목록으로
                         </a>
+                        <div id="disqus_thread"></div>
+                            <script>
+                                (function() { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://kgsh-sns.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', + new Date());
+                                (d.head || d.body).appendChild(s);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     </div>
                 </div>
             </div>
