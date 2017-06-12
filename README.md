@@ -8,4 +8,4 @@
 
 **이미지에 댓글을 작성할 수 있습니다**
 
-![demo]('./image1.jpg')
+![Demo](image1.jpg)
