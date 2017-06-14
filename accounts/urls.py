@@ -1,5 +1,6 @@
 from django.conf.urls import url
-from django.contrib.auth.views import login
+from django.conf import settings
+from django.contrib.auth.views import login, logout
 from . import views
 
 urlpatterns = [
@@ -8,4 +9,7 @@ urlpatterns = [
     }),
     url(r'signup/$', views.signup, name='signup'),
     url(r'profile/$', views.profile, name='profile'),
+    url(r'logout/$', logout, name='logout', kwargs={
+        'next_page' : '/'
+    }),
 ]
