@@ -37,6 +37,13 @@
             </div>
         </div>
         <div class="row">
+            <form enctype="multipart/form-data" method="POST" class="post-form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="save btn btn-default">Save</button>
+            </form>
+        </div>
+        <div class="row">
             <div id="columns">
                 {% for post in post_list %}
                     <figure>
